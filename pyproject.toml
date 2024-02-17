@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "nattouclock"
+version = "0.1.0"
+description = "Clock widget for Linux"
+authors = ["nattoujam <Public.kyuuanago@gmail.com>"]
+readme = "README.md"
+repository = "https://github.com/nattoujam/nattou-clock"
+include = [
+  "nattouclock/icon.png"
+]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+PyQt5 = "=5.15.2"
+pyyaml = "^6.0.1"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.8.0"
+flake8 = "^7.0.0"
+isort = "^5.13.2"
+autopep8 = "^2.0.4"
+
+[tool.poetry.scripts]
+nattouclock = "nattouclock.widget:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
