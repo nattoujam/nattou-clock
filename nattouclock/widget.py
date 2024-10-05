@@ -133,7 +133,6 @@ class TrayIcon(QSystemTrayIcon):
         self._trayIconMenu.addSeparator()
         self._registerAction('Toggle Always Show Top', self._settings.toggleAlwaysShowTop)
         self._registerAction('Toggle Draggable', self._settings.toggleDraggable)
-        self._registerAction('Toggle Hide on Mouseover', self._settings.toggleHidable)
         self._trayIconMenu.addSeparator()
         self._registerAction("Quit", qApp.quit)
 
